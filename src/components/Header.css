@@ -1,11 +1,12 @@
-nav{
+.header {
+    line-height: 75px;
+    position: fixed;
+    top: 0;
     width: 100%;
     height: 75px;
-    line-height: 75px;
+    background-color: #fe23f3;
     padding: 0px 50px;
-    position: fixed;
-    background-image: linear-gradient(#501ddd,#372dca);
-}
+  }
 
 .logo{
     font-size: 30px;
@@ -17,19 +18,19 @@ nav{
     cursor: pointer;
 }
 
-nav ul{
+.header ul{
     float: right;
 }
 
-nav li{
+.header li{
     display: inline-block;
     list-style: none;
 }
 
-nav li a{
+.header li a{
     font-size: 18px;
     text-transform: uppercase;
-    padding: 0px 30px;
+    padding: 0px 20px;
     color: white;
     text-decoration: none;
 }

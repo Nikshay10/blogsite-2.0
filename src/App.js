@@ -3,6 +3,8 @@ import './App.css';
 import Footer from './components/Footer';
 import Header from './components/Header';
 import PostList from './components/PostList';
+import Sidebar from './components/Sidebar';
+import Body from './components/Body';
 
 const GQL_URI='https://api-ap-south-1.hygraph.com/v2/clja2cxwd24l001t2308g4tju/master';
 
@@ -16,7 +18,8 @@ function App() {
     <ApolloProvider client={apolloClient}>
     <div className="App">
       <Header/>
-      <PostList/>
+      <Sidebar/>
+      <Body/>
       <Footer/>
     </div>
     </ApolloProvider>
