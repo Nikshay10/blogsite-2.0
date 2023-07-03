@@ -17,10 +17,7 @@ function App() {
   return (
     <ApolloProvider client={apolloClient}>
     <div className="App">
-      <Header/>
-      <Sidebar/>
       <Body/>
-      <Footer/>
     </div>
     </ApolloProvider>
   );
