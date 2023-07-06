@@ -7,8 +7,8 @@ query GetPosts($first: Int,$after: String) {
             node {
                 id
                 title
-                datePublished,
-                slug,
+                datePublished
+                slug
                 content{
                     html
                 }

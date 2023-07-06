@@ -1,8 +1,8 @@
 import React from 'react'
 import './PostCard.css'
-import PostView from './PostView'
+import {browserHistory, Link,Route,Routes } from 'react-router-dom'
 
-function PostCard({id,title,author,content,datePublished,coverPhoto}) {
+const PostCard=({id,title,author,content,datePublished,coverPhoto,slug})=> {
   return (
     <div class="post">
       <div class="post-header">
@@ -12,12 +12,13 @@ function PostCard({id,title,author,content,datePublished,coverPhoto}) {
           <p class="post-date">{datePublished}</p>
         </div>
       </div>
+      <h1>{title}</h1><Link to={"/Posts/"+slug}>
       <img src={coverPhoto.url} class="cover-photo"/>
+      </Link>
       <div
           className='post-content'
           dangerouslySetInnerHTML={{ __html: content.html }}
         />
-      <a href="#" class="read-more">Read More</a>
     </div>
   )
 }
