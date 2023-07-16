@@ -13,8 +13,9 @@ const PostCard=({id,title,author,content,datePublished,coverPhoto,slug})=> {
           <p className="post-date">{datePublished}</p>
         </div>
       </div>
-      <h1>{title}</h1><Link to={"/Posts/"+slug}>
-      <img src={coverPhoto.url} class="cover-photo"/>
+      <h1>{title}</h1>
+      <Link to='/about'>
+        <img src={coverPhoto.url} class="cover-photo"/>
       </Link>
       <Routes>
         <Route path='/about' element={<About/>}/>
