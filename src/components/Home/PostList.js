@@ -2,7 +2,7 @@ import { useQuery } from '@apollo/client'
 import React from 'react'
 import {GET_POSTS} from '../../queries/postQuery'
 import PostCard from './PostCard';
-import './PostList.css';
+import './styles.css';
 import LoadingPage from '../LoadingPage';
 
 function PostList() {

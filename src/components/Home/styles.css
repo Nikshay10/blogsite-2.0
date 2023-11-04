@@ -1,54 +1,73 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif; /* Set the background color for the entire body */
+}
+
 .post {
-    background-color: #fff;
+    background-color: #fff; /* Set the background color for the individual blog posts */
     border-radius: 5px;
     padding: 20px;
     margin-bottom: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-  
+
 .post .post-header {
+    background-color: #fff;
     display: flex;
     align-items: center;
     margin-bottom: 20px;
 }
-  
+
+
 .post .post-header .avatar {
+    background-color: #fff;
     width: 50px;
     height: 50px;
     border-radius: 50%;
     object-fit: cover;
     margin-right: 10px;
 }
-  
+
 .post .post-header .user-info {
+    background-color: #fff;
     display: flex;
     flex-direction: column;
 }
-  
+
 .post .post-header .user-info .user-name {
+    background-color: #fff;
     font-size: 18px;
     font-weight: bold;
 }
-  
+
 .post .post-header .user-info .post-date {
+    background-color: #fff;
     font-size: 14px;
     color: #888;
 }
-  
+
 .post .cover-photo {
+    background-color: #fff;
     width: 100%;
     max-height: 300px;
     object-fit: cover;
     margin-bottom: 20px;
 }
-  
+
 .post .post-content {
+    background-color: #fff;
     font-size: 16px;
     line-height: 1.5;
     margin-bottom: 20px;
 }
-  
+
 .post .read-more {
+    background-color: #fff;
     display: inline-block;
     padding: 6px 12px;
     background-color: #333;
@@ -57,8 +76,26 @@
     border-radius: 3px;
     transition: background-color 0.3s ease;
 }
-  
+
 .post .read-more:hover {
     background-color: #555;
 }
+
+.blog-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color: #f5ba13;
+    margin: auto -16px;
+    padding: 16px 32px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+  }
+  
+  header h1 {
+    font-family: "McLaren", cursive;
+    font-weight: 200;
+  }
   

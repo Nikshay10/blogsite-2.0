@@ -1,7 +1,5 @@
 import React from 'react'
-import './PostCard.css'
-import {browserHistory, Link,Route,Routes } from 'react-router-dom'
-import About from './About';
+import './styles.css'
 
 const PostCard=({id,title,author,content,datePublished,coverPhoto,slug})=> {
   return (
@@ -14,12 +12,7 @@ const PostCard=({id,title,author,content,datePublished,coverPhoto,slug})=> {
         </div>
       </div>
       <h1>{title}</h1>
-      <Link to='/about'>
         <img src={coverPhoto.url} class="cover-photo"/>
-      </Link>
-      <Routes>
-        <Route path='/about' element={<About/>}/>
-      </Routes>
       <div
         classNameName="post-content"
         dangerouslySetInnerHTML={{ __html: content.html }}
